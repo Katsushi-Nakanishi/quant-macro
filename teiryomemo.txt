@@ -1,0 +1,24 @@
+your own directry
+make clone from remote:git clone
+
+
+ls -gtr:時間順にリスト表示
+mkdir ディレクトリ名:making directry
+今いるディレクトリでVSCODEを開く
+：code .
+shift + ctrl + p
+：コマンドパレットを開ける
+>>git clone>>urlを貼り付ける
+checking status:git status
+赤字がある場合は困る(例：modified readme.md)
+>>git diff readme.md
+
+①git add ファイル名:新しいファイルを追加
+
+②git commit -m "bcycle slides"：メッセージをつける
+
+③git push：remoteにpush
+
+remote to local:git pull
+local to remote:git push
+
