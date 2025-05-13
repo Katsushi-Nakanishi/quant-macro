@@ -10,8 +10,8 @@ start_date = '1955-01-01'
 end_date = '2022-01-01'
 
 # download the data from FRED using pandas_datareader
-gdp = web.DataReader('CLVMNACSCAB1GQFR', 'fred', start_date, end_date)
-log_gdp = np.log(gdp)
+gdp_france = web.DataReader('CLVMNACSCAB1GQFR', 'fred', start_date, end_date)
+log_gdp = np.log(gdp_france)
 
 # apply a Hodrick-Prescott filter to the data to extract the cyclical component
 cycle_1600, trend_1600 = sm.tsa.filters.hpfilter(log_gdp, lamb=1600)
